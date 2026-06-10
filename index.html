@@ -89,7 +89,7 @@
   @media(max-width:480px){ .beans-pill { display:none; } }
   .avatar-btn {
     width:38px; height:38px; border-radius:50%; overflow:hidden;
-    border:none; cursor:pointer; ring: 2px solid rgba(0,72,47,0.15);
+    border:none; cursor:pointer; 
     box-shadow: 0 0 0 2px rgba(0,72,47,0.1);
     flex-shrink:0;
   }
@@ -605,21 +605,21 @@
     <div class="space-y-12">
       <div class="text-center" style="text-align:center">
         <h2 class="section-title" style="margin-bottom:10px">Daily Brews</h2>
-        <p class="section-sub" style="margin:0 auto">Curated selection for your modern ritual. Cada grano es seleccionado bajo comercio justo para una experiencia inolvidable.</p>
+        <p class="section-sub" style="margin:0 auto">Cada grano es seleccionado bajo comercio justo para una experiencia inolvidable.</p>
       </div>
 
       <div class="filters-bar">
         <div class="search-wrap">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-          <input type="text" class="search-input" id="search-input" placeholder="Search your favorite coffee..." oninput="filterProducts()">
+          <input type="text" class="search-input" id="search-input" placeholder="Encuentra tu cafe favorito..." oninput="filterProducts()">
         </div>
         <div class="filter-chips">
           <span style="font-size:.7rem;font-weight:700;color:var(--on-surface-variant)">Filtrar:</span>
           <button class="chip active" data-badge="" onclick="selectChip(this)">Todos</button>
-          <button class="chip" data-badge="Strong" onclick="selectChip(this)">Strong</button>
-          <button class="chip" data-badge="Smooth" onclick="selectChip(this)">Smooth</button>
-          <button class="chip" data-badge="Bestseller" onclick="selectChip(this)">Bestseller</button>
-          <button class="chip" data-badge="Vibrant" onclick="selectChip(this)">Vibrant</button>
+          <button class="chip" data-badge="Strong" onclick="selectChip(this)">Fuerte</button>
+          <button class="chip" data-badge="Smooth" onclick="selectChip(this)">Suave</button>
+          <button class="chip" data-badge="Bestseller" onclick="selectChip(this)">Mas solicitados</button>
+          <button class="chip" data-badge="Vibrant" onclick="selectChip(this)">vibrantes</button>
         </div>
       </div>
 
@@ -629,7 +629,7 @@
       <div class="beans-card">
         <div class="beans-card-text">
           <span style="display:inline-block;padding:4px 12px;border-radius:999px;background:rgba(255,255,255,0.2);font-size:.65rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:#fff;margin-bottom:10px">Recompensas del Ritual</span>
-          <h3>Collect Beans</h3>
+          <h3>Granos recolectados</h3>
           <p id="beans-card-text">Estás a solo <strong>4 granos</strong> de obtener una infusión de ritual completamente gratis.</p>
           <div style="margin-top:16px">
             <button onclick="setTab('quiz')" style="background:#fff;color:var(--primary);border:none;cursor:pointer;padding:10px 20px;border-radius:999px;font-size:.75rem;font-weight:800;display:inline-flex;align-items:center;gap:6px;box-shadow:0 4px 12px rgba(0,0,0,.15);transition:.2s" onmouseover="this.style.background='#f0f0f0'" onmouseout="this.style.background='#fff'">
@@ -647,7 +647,7 @@
             <span style="font-size:1.2rem">🌟</span>
             <span style="font-family:'Montserrat',sans-serif;font-size:1.1rem;font-weight:900;color:#fff" id="beans-circle-text">8/12</span>
           </div>
-          <span class="progress-label" style="margin-top:4px">BEANS COLLECTED</span>
+          <span class="progress-label" style="margin-top:4px">GRANO COLECTADO</span>
         </div>
       </div>
     </div>
@@ -657,7 +657,7 @@
   <div id="tab-quiz" class="page hidden">
     <div class="space-y-12">
       <div class="text-center">
-        <span class="section-eyebrow">Interactive Quiz</span>
+        <span class="section-eyebrow">Quiz Interactivo</span>
         <h2 class="section-title" style="margin-bottom:12px">Encuentra tu Ritual de Hoy</h2>
         <p class="section-sub" style="margin:0 auto">El café perfecto no solo depende del grano, sino de tu estado de ánimo. Cuéntanos cómo te sientes y diseñaremos tu experiencia ideal.</p>
       </div>
@@ -668,10 +668,10 @@
         <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKg0HEA3PerPdCIDFcgxpZhqpNo0sPmu7z66rSDWiYtERnHp2XmCV2OSuzm9lbGhbV0OU2Di-VAbY8CYczcx7VBGsxQj3P_yDG4iBfLW5HkS3RE01_Z3609cwgEQPcfMnf4aisQojOlWFFdLmR1XqVFSCNDCLR160dRCRreiJRgmiADQkJc9lfrh7hAnezni4lpeyo14SDjA7PTZ9wNy4kpJ5FYASzMMKDVzR3rilOdq6LwOlELdGPPhwl_dQFNb5HrMNOORzYeNy4" alt="Barista" class="feature-strip-img" referrerpolicy="no-referrer">
         <div class="feature-strip-text">
           <h3>Más que una bebida, es tu momento.</h3>
-          <p>En Roast & Ritual, entendemos que cada taza cuenta una historia diferente. Seleccionamos granos de origen único que se alinean con tu energía actual.</p>
+          <p>En INFUSION, entendemos que cada taza cuenta una historia diferente. Seleccionamos granos de origen único que se alinean con tu energía actual.</p>
           <div class="feature-strip-actions">
             <button class="btn-process" onclick="openProcessModal()">Saber más sobre nuestro proceso</button>
-            <button class="btn-bean-support" onclick="addBeans(1);showToast('☕ ¡+1 Bean por apoyar la caficultura!')">☕ Apoyar caficultura ( +1 Bean )</button>
+            <button class="btn-bean-support" onclick="addBeans(1);showToast('☕ ¡+1 Grano por apoyar la caficultura!')">☕ Apoyar caficultura ( +1 Grano )</button>
           </div>
         </div>
       </div>
@@ -709,7 +709,7 @@
       <div class="about-grid">
         <div>
           <h3 style="font-size:1.6rem;font-weight:900;color:var(--primary);margin-bottom:16px;line-height:1.3">Nuestros Pilares Fundamentales</h3>
-          <p style="font-size:.83rem;color:var(--on-surface-variant);line-height:1.7;margin-bottom:20px">Cada taza que servimos en <strong>Roast & Ritual</strong> busca equilibrar tu energía integral.</p>
+          <p style="font-size:.83rem;color:var(--on-surface-variant);line-height:1.7;margin-bottom:20px">Cada taza que servimos en <strong>INFUSION</strong> busca equilibrar tu energía integral.</p>
           <div style="display:flex;flex-direction:column;gap:20px">
             <div class="pillar">
               <div class="pillar-icon">🌿</div>
@@ -736,7 +736,7 @@
       <div class="manifesto-cta">
         <h3>¿Apoyas la caficultura artesanal consciente?</h3>
         <p>Únete a nuestra lista de fundadores honorarios y aboga por granos de origen limpio. Firmar es completamente libre y acumulas recompensas.</p>
-        <button class="btn-manifesto" onclick="handleManifesto()">Firmar el Manifiesto (+2 Beans)</button>
+        <button class="btn-manifesto" onclick="handleManifesto()">Firmar el Manifiesto (+2 Granos)</button>
       </div>
     </div>
   </div>
@@ -746,9 +746,9 @@
     <div style="max-width:600px;margin:0 auto;text-align:center;display:flex;flex-direction:column;gap:24px">
       <span style="font-size:2.5rem">📍</span>
       <h2 style="font-size:1.8rem;font-weight:900;color:var(--primary)">Contáctanos</h2>
-      <p style="font-size:.85rem;color:var(--on-surface-variant);line-height:1.7">Visítanos en cualquiera de nuestros templos de calma Roast & Ritual.</p>
+      <p style="font-size:.85rem;color:var(--on-surface-variant);line-height:1.7">Visítanos en cualquiera de nuestros templos de  INFUSION.</p>
       <div class="contact-box">
-        <p>📍 <strong>Templo Central:</strong> Cra 43A #5-20, El Poblado, Medellín</p>
+        <p>📍 <strong>Templo Central:</strong> Zona Franca Santander, Zenith, Anillo Víal #piso 6, Bucaramanga, Santander</p>
         <p>📞 <strong>Teléfono Ritual:</strong> +57 (301) 450-4820</p>
         <p>✉️ <strong>Email Secreto:</strong> ritual@roastritual.com</p>
         <p>🕒 <strong>Horarios de Calma:</strong> Lunes a Domingo de 7:00 AM a 8:00 PM</p>
@@ -787,10 +787,10 @@
     <button class="modal-close" onclick="closeProfile()">✕</button>
     <div class="profile-avatar"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuChmjCeeFVMSh3B6wJNGQX7HjZjyemyweMvJiN7q3WmJYda7BBED0vkeC88kPKbFLZe2NeaIhZBEAXWlemmSLXx5j3RpzeE4pz3Ur4fCbDL6uJzymjNKBVrOD19iL-1ND477aQ8aZImLyFodea8pH3dJ2kuJqdPiOet8bdfJH2x9l8iAAqLXbF9NcU8FdZrItrszbJWRAcWy9EDSzi4GOXtXdLmoAPkgSyBiiqwLMCWMQjYs7WxEFOcq-AlV9wMy8JjTy5JC-cldLPP" alt="Avatar" referrerpolicy="no-referrer"></div>
     <div class="profile-name">Socio de Calma</div>
-    <div class="profile-role">Miembro VIP en Roast & Ritual</div>
+    <div class="profile-role">Miembro VIP en INFUSION</div>
     <div class="loyalty-card">
       <span class="loyalty-label">Granos acumulados</span>
-      <div><span class="loyalty-beans" id="profile-beans">8</span><span class="loyalty-unit"> / 12 BEANS</span></div>
+      <div><span class="loyalty-beans" id="profile-beans">8</span><span class="loyalty-unit"> / 12 Granos</span></div>
       <div class="loyalty-bar"><div class="loyalty-fill" id="profile-fill" style="width:67%"></div></div>
       <p class="loyalty-note" id="profile-note">Te faltan 4 granos para reclamar tu próxima infusión premium gratis.</p>
     </div>
@@ -809,7 +809,7 @@
     <button class="modal-close" onclick="closeProcessModal()">✕</button>
     <div style="font-size:1.8rem;margin-bottom:8px">🌱</div>
     <h4>Nuestro Proceso Artesanal</h4>
-    <p>En <strong>Roast & Ritual</strong>, entendemos la infusión de café como una ceremonia sagrada de introspección diaria. Suministramos nuestros granos exclusivamente de fincas ubicadas a más de 1,200 metros sobre el nivel del mar en micro-lotes de comercio consciente.</p>
+    <p>En <strong>INFUSION</strong>, entendemos la infusión de café como una ceremonia sagrada de introspección diaria. Suministramos nuestros granos exclusivamente de fincas ubicadas a más de 1,200 metros sobre el nivel del mar en micro-lotes de comercio consciente.</p>
     <div class="process-list">
       <span class="process-list-title">Nuestros Tres Mandamientos:</span>
       <ul>
@@ -863,10 +863,10 @@
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
         </button>
       </div>
-      <p style="font-size:.68rem;color:var(--on-surface-variant);margin-top:12px;line-height:1.6">Trabajamos con amor en Kyoto, Medellín y caficultores locales.</p>
+      <p style="font-size:.68rem;color:var(--on-surface-variant);margin-top:12px;line-height:1.6">Trabajamos con amor en  Bucaramanga y caficultores locales.</p>
     </div>
   </div>
-  <div class="footer-bottom">© <span id="footer-year"></span> Roast & Ritual Coffee Culture. Todos los derechos reservados.</div>
+  <div class="footer-bottom">© <span id="footer-year"></span> INFUSION Coffee Culture. Todos los derechos reservados.</div>
 </footer>
 
 <script>
